@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import NavbarSection from './sections/Navbar';
+import MastheadSection from './sections/Masthead';
+import BasicTextSection from './sections/BasicText';
+import TeamSection from './sections/Team';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+
+    const placeholderText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere maximus metus non rhoncus. Integer vehicula lacus risus, ut rutrum metus venenatis eget. Curabitur mollis felis tellus, at tempor diam vestibulum commodo.";
+
+    return (
+        <div className="App">
+            <NavbarSection />
+            <MastheadSection title="Eat, Code, Repeat" backgroundImage="" paragraph={ placeholderText } />
+            <BasicTextSection title="Mission" backgroundImage="" paragraph={ placeholderText } />
+            <TeamSection />
+        </div>
+    );
+};
 
 export default App;
