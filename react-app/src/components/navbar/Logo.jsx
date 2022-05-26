@@ -1,10 +1,10 @@
-// replace with import when we have a logo
-const image = 'https://via.placeholder.com/150x80';
+import image from '../../assets/emerald.png'
 
 const Logo = () => {
     return (
-        <div className="logo-wrapper">
+        <div className="flex-wrapper">
             <img src={ image } alt="Team Emerald" className="logo" />
+            <h1>Team Emerald</h1>
         </div>
     );
 };

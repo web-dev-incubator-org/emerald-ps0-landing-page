@@ -1,0 +1,5 @@
+.hero__bg{
+  background: linear-gradient(0deg,rgba(30,30,30,.5),rgba(30,30,30,.5)),url(../../assets/hero_image.png) no-repeat 50% fixed;
+  background-size: cover;
+  height: 85vh;
+}

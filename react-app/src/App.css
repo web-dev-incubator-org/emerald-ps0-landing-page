@@ -1,5 +1,33 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
 .App {
   color: #fff;
   text-align: center;
-  background-color: #282c34;
+  /* background-color: var(--color-bg); */
+}
+
+.flex-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gradient__bg{
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 3% 25%, rgba(37, 37, 102, 1) 0%, rgba(6, 20, 17, 1) 100%);
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 3% 25%, rgba(37, 37, 102, 1) 0%, rgba(6, 20, 17, 1) 100%);
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 3% 25%, rgba(37, 37, 102, 1) 0%, rgba(6, 20, 17, 1) 100%);
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 3% 25%, rgba(37, 37, 102, 1) 0%, rgba(6, 20, 17, 1) 100%);
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 3% 25%, rgba(37, 37, 102, 1) 0%, rgba(6, 20, 17, 1) 100%);
 }
